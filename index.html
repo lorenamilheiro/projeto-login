@@ -12,35 +12,39 @@
     <link rel="stylesheet" href="estilos/style.css" />
   </head>
   <body>
-    <div id="login">
-      <img src="imagem/metal.jpeg" alt="metais" />
-      <h1>Login</h1>
-      <p id="ambiente">
-        Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder
-        fazer as configurações no seu ambiente.
-      </p>
-      <form action="" autocomplete="on">
-        <p>
-          <span class="material-icons"> person </span>
-          <input
-            type="email"
-            name="seuemail"
-            id="email"
-            placeholder="seu e-mail"
-          />
-        </p>
-        <p>
-          <span class="material-icons"> vpn_key </span>
-          <input
-            type="password"
-            name="suasenha"
-            id="senha"
-            placeholder="sua senha"
-          />
-        </p>
-        <p><input type="submit" value="Entrar" /></p>
-        <span class="material-icons"> email </span>
-      </form>
-    </div>
+    <main>
+      <section id="login">
+        <div id="imagem"></div>
+        <div id="formulario">
+          <h1>Login</h1>
+          <p>
+            Seja bem-vindo(a) novamente. Faça login para acessar sua conta e
+            poder fazer as configurações no seu ambiente.
+          </p>
+          <form action="login.php" method="post" autocomplete="on">
+            <p>
+              <span class="material-icons"> person </span>
+              <input
+                type="email"
+                name="seuemail"
+                id="email"
+                placeholder="seu e-mail"
+              />
+            </p>
+            <p>
+              <span class="material-icons"> vpn_key </span>
+              <input
+                type="password"
+                name="suasenha"
+                id="senha"
+                placeholder="sua senha"
+              />
+            </p>
+            <p><input type="submit" value="Entrar" /></p>
+            <span class="material-icons"> email </span>
+          </form>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
