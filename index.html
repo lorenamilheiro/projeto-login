@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="estilos/style.css" />
-    <link rel="stylesheet" href="media-query/style.css">
+    <link rel="stylesheet" href="media-query/style.css" />
   </head>
   <body>
     <main>
@@ -23,26 +23,35 @@
             poder fazer as configurações no seu ambiente.
           </p>
           <form action="login.php" method="post" autocomplete="on">
-            <p>
+            <div class="campo">
               <span class="material-icons"> person </span>
               <input
                 type="email"
                 name="seuemail"
-                id="email"
+                id="iemail"
                 placeholder="seu e-mail"
+                autocomplete="email"
+                required
               />
-            </p>
-            <p>
+            </div>
+            <div class="campo">
               <span class="material-icons"> vpn_key </span>
               <input
                 type="password"
                 name="suasenha"
-                id="senha"
+                id="isenha"
                 placeholder="sua senha"
+                autocomplete="current-password"
+                required
+                minlength="8"
+                maxlength="20"
               />
-            </p>
-            <p><input type="submit" value="Entrar" /></p>
-            <span class="material-icons"> email </span>
+            </div>
+            <input type="submit" value="Entrar" />
+            <a href="esqueci.html" class="botao"
+              >Esqueci minha senha
+              <span class="material-icons"> email </span></a
+            >
           </form>
         </div>
       </section>
